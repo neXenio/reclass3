@@ -1,0 +1,41 @@
+[build-system]
+requires = [
+    "poetry-core==1.4.0",
+    "poetry-version-plugin==0.1.3"
+]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "reclass3"
+description = "Generic templated configuration management for Kubernetes, Terraform and other things"
+authors = [
+    "neXenio <nexenio@nexenio.com>",
+    "Matteo Voges <matteo.voges@nexenio.com>"
+]
+repository = "https://github.com/neXenio/reclass3"
+readme = "README.md"
+keywords = ["python", "python3", "reclass"]
+classifiers=[
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+version = "0.0.0"
+packages = [
+    { include = "reclass3" },
+]
+
+[tool.poetry.scripts]
+reclass3 = 'reclass3.cli:main'
+
+[tool.poetry-version-plugin]
+source = "git-tag"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyyaml = "^6.0"
+
+[tool.black]
+line-length = 80
+target-version = ['py38']
