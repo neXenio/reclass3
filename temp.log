@@ -1,6 +1,0 @@
-2023-03-24 01:26:36,326 DEBUG Running with args: Namespace(subparser_name='i', verbose=True, quiet=False, no_color=False, storage_type='yaml', func=<function inventory at 0x7f1ee76248b0>, name='inventory') (cli.py:59)
-2023-03-24 01:26:36,327 INFO Im an information. (inventory.py:13)
-2023-03-24 01:26:36,327 DEBUG Im debuggin something. (inventory.py:14)
-2023-03-24 01:26:36,327 WARNING Im a warning. (inventory.py:15)
-2023-03-24 01:26:36,327 ERROR Im a critical error. (inventory.py:16)
-2023-03-24 01:26:36,327 CRITICAL Im even more dangerous. (inventory.py:17)
