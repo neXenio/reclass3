@@ -1,0 +1,7 @@
+classes:
+  - myclass1
+  - myclass2
+
+parameters:
+  moin: True
+
